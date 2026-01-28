@@ -207,7 +207,7 @@ function handlePinKeyDown(e, pinDigits) {
 function attemptLogin(pinDigits, loginButton, loginMessage) {
     // Get the entered PIN
     const enteredPin = pinDigits.map(digit => digit.value).join('');
-    const correctPin = '032395';
+    const correctPin = "__PIN_CODE__";
     
     // Show loading on button
     loginButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Signing in...';
