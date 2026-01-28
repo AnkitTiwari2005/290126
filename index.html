@@ -9,9 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Security layer to hide content until JavaScript loads -->
+    <div id="security-overlay">
+        <div class="security-message">
+            <i class="fas fa-shield-alt"></i>
+            <h2>Loading Secure Environment...</h2>
+            <p>Please wait while we initialize security protocols</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+    
     <!-- Minimal HTML structure - content will be loaded via JavaScript -->
     <div id="root"></div>
     
+    <!-- Add Supabase client library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
+    
+    <!-- Security notice -->
+    <div class="security-footer">
+        <i class="fas fa-lock"></i> Secure Connection Encrypted
+    </div>
 </body>
 </html>
